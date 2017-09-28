@@ -1,15 +1,15 @@
 #include <stdio.h>
-int main()
+void fact()
 {
     int n, i;
     unsigned long long factorial = 1;
 
-    printf("Enter an integer: ");
+    printf("\nEnter an integer: ");
     scanf("%d",&n);
 
   // show error if the user enters a negative integer
        if (n < 0)
-               printf("Error! Factorial of a negative number doesn't exist.");
+               printf("\nError! Factorial of a negative number doesn't exist.");
   
                    else
                       {
@@ -17,8 +17,8 @@ int main()
                                        {
                                                  factorial *= i;              // factorial = factorial*i;
                                                              }
-                                                                     printf("Factorial of %d = %llu", n, factorial);
+                                                                     printf("\nFactorial of %d = %llu\n", n, factorial);
                                                                          }
     
-                                                                             return 0;
+                            // return 0;
                                                                              }
